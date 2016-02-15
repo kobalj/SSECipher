@@ -22,11 +22,41 @@ package si.kobalj.ssecipher;
  */
 public interface ISSECipher {
 
+    /**
+     * Encryption of the provided data. This method assumes the charset is UTF-8 and is base64 encoded.
+     *
+     * @param pData Data to be encrypted
+     * @return Encrypted and base64 encoded data.
+     * @throws Exception In case of errors in the encryption process
+     */
     public String encrypt(String pData) throws Exception;
-    
+
+    /**
+     * Encryption of the provided data with the provided charset. Method assumes the data is base64 encoded.
+     *
+     * @param pData Data to be encrypted
+     * @param pCharsete Charset to use
+     * @return Encrypted and base64 encoded data.
+     * @throws Exception In case of errors in the encryption process
+     */
     public String encrypt(String pData, String pCharsete) throws Exception;
 
+    /**
+     * Decryption of the provided data. This method assumes the charset is UTF-8 and is base64 encoded.
+     *
+     * @param pData Base64 data to be decrypted.
+     * @return Decrypted data.
+     * @throws Exception In case of errors in the decryption process
+     */
     public String decrypt(String pData) throws Exception;
-    
+
+    /**
+     * Decryption of the provided data. with the provided charset. Method assumes the data is base64 encoded.
+     *
+     * @param pData Base64 data to be decrypted.
+     * @param pCharset Charset to use
+     * @return Decrypted data.
+     * @throws Exception In case of errors in the decryption process
+     */
     public String decrypt(String pData, String pCharset) throws Exception;
 }
