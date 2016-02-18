@@ -20,7 +20,7 @@ package si.kobalj.ssecipher.runner;
  *
  * @author Jure Kobal
  */
-public class CRandomKeyGenerator {
+public class CCommandLine {
 
     public static void main(String[] args) throws Exception {
 
