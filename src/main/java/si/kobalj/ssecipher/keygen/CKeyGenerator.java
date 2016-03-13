@@ -33,6 +33,5 @@ public class CKeyGenerator {
         SecretKey key = keyGenerator.generateKey();
         String enckey = Base64.getEncoder().encodeToString(key.getEncoded());
         return enckey;
-//        System.out.println("Generated and base64 encoded key is: " + enckey);
     }
 }

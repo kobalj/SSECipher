@@ -39,7 +39,8 @@ public class CRunner {
         if (cmdArgs.generateKey()) {
             CKeyGenerator kg = new CKeyGenerator();
             try {
-            kg.generate(cmdArgs.getAlgorithm(), cmdArgs.getKeySize());
+            String key = kg.generate(cmdArgs.getAlgorithm(), cmdArgs.getKeySize());
+                System.out.println("Base64 generated key = '" + key + "'");
             } catch (NoSuchAlgorithmException ne) {
                 System.err.println("Secret key generating failed: " + ne.getMessage());
             }

@@ -16,8 +16,6 @@
  */
 package si.kobalj.ssecipher.runner;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import si.kobalj.ssecipher.CAESCipherBuilder;
 import si.kobalj.ssecipher.ISSECipher;
 
@@ -38,7 +36,7 @@ public class CRuntimeValidate {
     public void validate() {
         for (String cipher : ciphers) {
             StringBuilder sb = new StringBuilder();
-            sb.append("Support for: ").append(cipher).append(":");
+            sb.append("Support for:\t").append(cipher).append("\t");
             boolean isValid = true;
             String err = null;
             try {

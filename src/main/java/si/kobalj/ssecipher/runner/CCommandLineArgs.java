@@ -57,9 +57,9 @@ public class CCommandLineArgs {
                     this.generateKey = false;
                     break;
                 }
+                }
+                }
             }
-        }
-    }
 
     public String getAlgorithm() {
         return this.algorithm;
@@ -87,9 +87,9 @@ public class CCommandLineArgs {
 
     public void printHelp(PrintStream stream) {
         stream.print("SSECipher: command line arguments\n");
-        stream.print("-a\talgorithm to generate key (default AES)\n");
-        stream.print("-s\tsize of the key (default 256)\n");
+        stream.print("-a <name>\talgorithm to generate key (default AES)\n");
+        stream.print("-s <size>\tsize of the key (default 256)\n");
         stream.print("-c\tcheck for supported algorithms\n");
-        stream.print("-h\tdisplays this help");
+        stream.print("-h\tdisplays this help\n");
     }
 }
