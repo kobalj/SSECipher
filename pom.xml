@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>si.kobalj.utilities</groupId>
     <artifactId>SSECipher</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>SSECipher</name>
     <description>A simple Java implementation of SSECipher encoding/decoding library</description>
